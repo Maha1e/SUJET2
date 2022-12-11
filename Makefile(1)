@@ -1,0 +1,11 @@
+prog2: sujet2.o
+	gcc -Wall -o prog sujet2.o
+	
+sujet2.o: sujet2.c
+	gcc -Wall -c sujet2.c 
+	
+clean :
+	rm -rf *.o
+	
+mrproper : clean
+	rm -rf prog
